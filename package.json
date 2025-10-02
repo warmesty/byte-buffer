@@ -1,45 +1,24 @@
 {
-  "name": "byte-buffer",
-  "version": "2.0.0",
-  "description": "Wrapper for JavaScript's ArrayBuffer/DataView",
-  "author": "Tim Kurvers <tim@moonsphere.net>",
-  "repository": "timkurvers/byte-buffer",
-  "license": "MIT",
-  "keywords": [
-    "byte",
-    "byte buffer",
-    "bytebuffer"
-  ],
-  "main": "dist/byte-buffer.js",
-  "module": "lib/byte-buffer.mjs",
-  "files": [
-    "dist",
-    "lib",
-    "CHANGELOG.md",
-    "LICENSE.md",
-    "README.md"
-  ],
+  "name": "tcp-client-with-reconnection",
+  "version": "1.0.0",
+  "description": "Node.js TCP Client with automatic reconnection mechanism",
+  "main": "tcp-client-with-reconnection.js",
   "scripts": {
-    "build": "rollup -c",
-    "lint": "eslint . --ignore-pattern dist --ext js,mjs",
-    "test": "jest",
-    "test:coverage": "jest --coverage",
-    "test:watch": "jest --watch"
+    "start:client": "node example-usage.js",
+    "start:server": "node tcp-test-server.js",
+    "test": "node example-usage.js"
   },
-  "dependencies": {},
-  "devDependencies": {
-    "@babel/core": "^7.8.7",
-    "@babel/preset-env": "^7.14.2",
-    "@timkurvers/eslint-config": "^2.0.0",
-    "babel-eslint": "^10.1.0",
-    "babel-jest": "^25.1.0",
-    "eslint": "^6.8.0",
-    "eslint-config-airbnb": "^18.1.0",
-    "eslint-plugin-import": "^2.20.1",
-    "jest": "^26.6.3",
-    "jest-config": "^26.6.3",
-    "rollup": "^2.0.6",
-    "rollup-plugin-babel": "^4.4.0",
-    "rollup-plugin-terser": "^7.0.2"
+  "keywords": [
+    "tcp",
+    "client",
+    "server",
+    "reconnection",
+    "node.js",
+    "socket"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
   }
 }
